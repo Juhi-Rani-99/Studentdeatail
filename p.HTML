@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pagination</title>
+<!-- default pagination styles including -->
+<script type="text/javascript" src="path_to/jquery.js"></script>
+<script type="text/javascript" src="path_to/jquery.simplePagination.js"></script>
+<link type="text/css" rel="stylesheet"
+href="path_to/simplePagination.css" />
+<script src="server.js"></script>
+
+<!-- CSS styles -->
+<style type="text/css">
+body {
+font-size: 30px;
+background: red;
+}
+h2 {
+color: lime;
+text-align: center;
+}
+h3 {
+color: olive;
+text-align: center;
+}
+.a {
+text-align: center;
+color: white;
+}
+</style>
+<!-- JavaScript logic -->
+<script type="text/javascript">
+var currentPage = 1;
+var CountPerEachPage = 2;
+//json object mapping for content
+ src="data.js"</script> 
+  <!-- Include the pagination script -->
+  <script src="pagination.js"></script>
+ 
+<script>
+
+  
+</script>
+</head>
+<body>
+<h2>Pagination Introduction Content</h2>
+<h3>Content for Pagination in each Page</h3>
+<div id="showTable"></div>
+<div class="a">
+<a href="javascript:getPereviousPage()" id="previousPage">Previous
+Page</a> <a href="javascript:getNextPage()" id="nextPage">Next Page</a>
+Page Number: <span id="paginationPage"></span>
+</div>
+</body>
+</html>
